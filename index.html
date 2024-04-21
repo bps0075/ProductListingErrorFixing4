@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">Product Listing Website</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="mode-toggle">
+          <button id="toggle-button">Light Mode</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <label for="search-input">Search Products:</label>
+      <input type="text" id="search-input" placeholder="Search">
+      <button id="search-button">Search</button>
+    </section>
+
+    <section class="product-listing">
+      <article class="product">
+        <img src="images/product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+      </article>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Product Listing Website</p>
+    <ul class="social-media">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+
+    // Add dark mode functionality here (script.js)
+
+    searchButton.addEventListener('click', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      // Implement product search functionality here
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
